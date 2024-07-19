@@ -29,8 +29,8 @@ const Home: React.FC = () => {
                 className="text-center md:text-left relative items-center"
             >
                 <div>
-                    <h1 className="text-2xl font-bold mb-2">Enjoy the new experience of chatting with global friends</h1>
-                    <p className="text-gray-500 mb-6">Connect people around the world for free</p>
+                    <h1 className="text-2xl font-bold mb-2">Enjoy the new experience of chatting with AI</h1>
+                    <p className="text-gray-500 mb-6">Connect with AI for free</p>
                     <motion.button
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
@@ -40,7 +40,7 @@ const Home: React.FC = () => {
                     >
                         Get Started
                     </motion.button>
-                    <p className="text-gray-400 text-sm mt-4">Powered by <strong>ussage</strong></p>
+                    <p className="text-gray-400 text-sm mt-4">Powered by <strong>Thakiyu</strong></p>
                 </div>
             </motion.div>
         </motion.div>
