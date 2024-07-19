@@ -162,13 +162,14 @@ const ChatWindow: React.FC = () => {
         )}
       </div>
       <div className="bg-white p-4 flex w-full rounded-lg">
-        <input
+        {/* <input
           type="text"
           value={inputText}
           onChange={(e) => setInputText(e.target.value)}
           placeholder="Type here..."
           className="flex-1 border rounded-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500"
-        />
+        /> */}
+        <input type="" />
         <button
           onClick={sendMessage}
           className="ml-2 bg-purple-700  text-white rounded-full p-4 text-lg hover:bg-purple-700 focus:outline-none border-purple-700 focus:ring-2 focus:ring-purple-500"
