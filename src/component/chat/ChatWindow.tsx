@@ -160,13 +160,12 @@ const ChatWindow: React.FC = () => {
           ))
         )}
       </div>
-      <div className="bg-white px-4 py-4 flex items-center rounded-lg">
+      <div className="bg-white p-4 flex items-center rounded-lg">
         <input
           type="text"
           value={inputText}
           onChange={(e) => setInputText(e.target.value)}
           placeholder="Type here..."
-          // relative bottom-4
           className="flex-1 border rounded-full px-4    py-2 focus:outline-none focus:ring-2 focus:ring-purple-500"
         />
         <button
