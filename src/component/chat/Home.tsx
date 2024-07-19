@@ -10,7 +10,7 @@ const Home: React.FC = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="flex flex-col items-center justify-between p-4 md:flex-row md:p-0"
+            className="flex flex-col items-center justify-between p-4 md:flex-row md:p-0  font-Poppins"
         >
             <div className="flex items-center justify-center mb-7 md:mb-0 md:mr-8">
                 <motion.div
