@@ -17,7 +17,7 @@ const ChatWindow: React.FC = () => {
   const [messages, setMessages] = useState<Message[]>([]);
   const [inputText, setInputText] = useState('');
   const [loading , setLoading]= useState<boolean>(false)
-  const messagesEndRef = useRef(null);
+  const messagesEndRef : any= useRef(null);
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -27,7 +27,7 @@ const ChatWindow: React.FC = () => {
     scrollToBottom();
   }, [messages]);
 
-  function convertToHTML(text) {
+  function convertToHTML(text:any) {
     // Split the text into lines
     const lines = text.split('\n');
     
@@ -35,7 +35,7 @@ const ChatWindow: React.FC = () => {
     let inList = false;
 
   
-    lines.forEach(line => {
+    lines.forEach((line : any)=> {
       line = line.trim();
         line = line.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
       if (line.startsWith('**') && line.endsWith('**')) {
