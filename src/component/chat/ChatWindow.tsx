@@ -160,7 +160,7 @@ const ChatWindow: React.FC = () => {
           ))
         )}
       </div>
-      <div className="bg-white p-4 flex items-center rounded-lg">
+      <div className="bg-white p-4 flex w-full rounded-lg">
         <input
           type="text"
           value={inputText}
