@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef  } from 'react';
 import Chat2 from '../../assets/boat1.jpg';
 import { motion } from 'framer-motion';
 import { api_client } from '../../axios';
+import { IoIosSend } from "react-icons/io";
 import DOMPurify from 'dompurify';
 
 
@@ -161,21 +162,19 @@ const ChatWindow: React.FC = () => {
         )}
       </div>
       <div className="bg-white p-4 flex w-full rounded-lg">
-        {/* <input
+        <input
           type="text"
           value={inputText}
           onChange={(e) => setInputText(e.target.value)}
           placeholder="Type here..."
-          className="flex-1 border rounded-full px-4    py-2 focus:outline-none focus:ring-2 focus:ring-purple-500"
+          className="flex-1 border rounded-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500"
         />
         <button
           onClick={sendMessage}
-          className="ml-2 bg-purple-700  text-white rounded-full p-2 hover:bg-purple-700 focus:outline-none border-purple-700 focus:ring-2 focus:ring-purple-500"
+          className="ml-2 bg-purple-700  text-white rounded-full p-4 text-lg hover:bg-purple-700 focus:outline-none border-purple-700 focus:ring-2 focus:ring-purple-500"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
-          </svg>
-        </button> */}
+         <IoIosSend />
+        </button>
       </div>
     </div>
   </div>
